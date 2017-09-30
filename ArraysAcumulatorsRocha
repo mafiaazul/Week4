@@ -1,6 +1,6 @@
 start
     declarations
-        int myArray[10]
+        int myArray[10] 
         int sum = 0
 
     for (index = 0; index < myArray.length; index++)

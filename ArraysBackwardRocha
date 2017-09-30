@@ -1,0 +1,14 @@
+start
+  declarations
+    int myArray[10] = {}
+
+  for (int index = 0; index < myArray.lenght; index++)
+    Output "Enter an integer for the position " + index
+    Input myArray[index] 
+  endfor
+
+  for (int index = myArray.length - 1; index >= 0; index--)
+    Output "Number in position " + index
+    Output myArray[index]
+  endfor
+stop

@@ -10,5 +10,4 @@ start
     endfor
 
     Output "Sum of all integers is: " + sum
-
 Stop

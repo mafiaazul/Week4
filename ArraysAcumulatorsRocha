@@ -1,0 +1,14 @@
+start
+    declarations
+        int myArray[10]
+        int sum = 0
+
+    for (index = 0; index < myArray.length; index++)
+        Output "Please enter an integer: "
+        Input myArray[index]
+        sum = sum + myArray[index]
+    endfor
+
+    Output "Sum of all integers is: " + sum
+
+Stop

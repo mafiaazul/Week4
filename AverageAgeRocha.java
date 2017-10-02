@@ -1,16 +1,29 @@
+import java.util.Scanner;
+
 class AverageAge {
   public static void main(String[] args) {
-    int mumAge = 62;
-    int sonAge = 11;
-    int wifeAge = 39;
-    int dadAge = 70;
+    int person1 = 0;
+    int person2 = 0;
+    int person3 = 0;
+    int person4 = 0;
     int countOfFamilyMember = 4;
-    double averageAge = (mumAge + sonAge + wifeAge + dadAge) / (double)countOfFamilyMember;
+    
+    Scanner in = new Scanner(System.in);
+    
+    System.out.println("This program will calculate the average age of four people.");
+    System.out.print("Enter an age for the person 1: ");
+    person1 = in.nextInt();
+    System.out.print("Enter an age for the person 2: ");
+    person2 = in.nextInt();
+    System.out.print("Enter an age for the person 3: ");
+    person3 = in.nextInt();
+    System.out.print("Enter an age for the person 4: ");
+    person4 = in.nextInt();
+    
+    double averageAge = (person1 + person2 + person3 + person4) / (double)countOfFamilyMember;
 
-    System.out.println("Mum's age is: " + mumAge);
-    System.out.println("Son's age is: " + sonAge);
-    System.out.println("Wife's age is: " + wifeAge);
-    System.out.println("Dad's age is: " + dadAge);
-    System.out.println("The age's average is: " + averageAge);
+    System.out.println("The average age is: " + averageAge);
+    
+    in.close();
   }
 }
